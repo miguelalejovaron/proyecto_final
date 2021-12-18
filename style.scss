@@ -1,0 +1,623 @@
+$principal_color: #01c4e7;
+$principal_font: 'Nunito',
+sans-serif;
+$title_font: 'Poppins',
+sans-serif;
+$subtitle_font: 'Rubik',
+sans-serif;
+$red_neon_color: #f80000;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-family: $principal_font;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+hr {
+    display: block;
+    width: 90vw;
+    border: 0;
+    border-top: 1px double $principal_color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.navbar {
+    font-family: $subtitle_font;
+    border-bottom: 2px double $principal_color;
+    box-shadow: 0 0px 30px 2px $principal_color;
+
+    .color-nav {
+        background-color: black;
+    }
+
+    img {
+        width: 7em;
+        height: 4em;
+    }
+
+    .navbar-nav .dropdown-menu {
+        border: 2px double $principal_color;
+    }
+
+    .dropdown-divider {
+        border: 0.5px solid black;
+    }
+
+    .navbar-toggler {
+        border-color: #01c4e7;
+    }
+
+    .btn-outline {
+        margin-top: 2em;
+        border-color: $principal_color;
+        color: $principal_color;
+    }
+
+    .btn-outline:hover {
+        background-color: $principal_color;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .form-control {
+        border-radius: 0.8rem;
+    }
+}
+.bg-dark {
+    background-color: black!important;
+}
+.top-nav-collapse {
+    background-color: $principal_color;
+}
+
+// --------------------------------------carousel entrada ----------------------------
+.carousel {
+    margin-top: 3em;
+    .carousel-caption {
+        font-size: 1em;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bolder;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.fa-angle-double-left,.fa-angle-double-right {
+    color: white;
+    font-size: 2em;
+}
+
+// ------------------------------Carrousel interactivo owl nuevo,tendencias, chaquetas y ofertas--------------------------- 
+.title--box {
+    display: flex;
+    justify-content: center;
+
+    .text-align-center {
+        font-family: $subtitle_font;
+        font-size: 2.5em;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+}
+
+.product-item {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-fluid {
+    margin-top: 1.5em;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.text-color-white {
+    color: white;
+}
+
+.btns {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    color: $principal_color;
+}
+
+.product-img:hover .btns {
+    bottom: 0;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.product-type {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.product-name {
+    transition: all 0.3s ease-in-out;
+}
+
+.product-name:hover {
+    color: $principal_color;
+}
+
+.product-price {
+    color: $principal_color;
+}
+
+.rating {
+    font-size: 13px;
+}
+
+.product-item {
+    width: 600px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: white;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: $principal_color;
+}
+.redirectional-link-flex {
+    display: flex;
+    justify-content: center;
+    .redirectional-link {
+        text-decoration: underline;
+        margin-bottom: -1.2em;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+    .redirectional-link:hover {
+        color: $principal_color;
+    }
+}
+
+// ------------------------------------- chaquetas -----------------------------
+.introduction-section-chaquetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./imagenes/media/index_seccion_chaquetas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+    .introduction--text-style{
+        color: white;
+        font-family: $title_font;
+        font-weight: bolder;
+        font-size: 3.1rem;
+        text-align: center;
+        letter-spacing: 1;
+    }
+}
+.chaquetas-image-responsive {
+    margin-top: 1.5em;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+
+//------------------------------- testimonios carrousel------------------------------------
+.testimonials-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 100vw;
+    color: white;
+}
+
+.card-body {
+    background-color: black;
+    border-radius: 15px;
+    // border: 2px double white;
+}
+
+.testimonials .card {
+    background: rgba(1, 196, 231, 0.6);
+    // box-shadow: 0 8px 11px 1px $principal_color;
+    box-shadow: 0 8px 11px 1px white;
+    margin: 0 20px;
+    padding: 0 10;
+    border-radius: 15px;
+    border: 0;
+}
+
+.testimonials .card .card-img-top {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 8px;
+    box-shadow: 0 0px 10px 1px white;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonials .card h5 {
+    color: white;
+    font-family: $subtitle_font;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.testimonials .card h5 span {
+    color: #555;
+    font-size: 1rem;
+}
+
+.testimonials .card p {
+    font-size: 18px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.owl-item>div {
+    cursor: pointer;
+    margin: 10% 0%;
+    transition: margin 1s ease;
+}
+
+.testimonials .owl-dots {
+    text-align: center;
+}
+
+.testimonials .owl-dot span {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    display: block;
+    background-color: white;
+    transition: all 0.25s ease;
+    margin: 5px 7px;
+}
+
+.testimonials .owl-dot.active span {
+    background-color: $principal_color;
+}
+//------------------------------------------ OFERTAS---------------------
+.ofertas-text-color {
+    color: $red_neon_color;
+    font-family: $subtitle_font;
+    font-size: 2.5em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.product-price-ofertas {
+    color: $red_neon_color;
+    font-weight: bolder;
+}
+.redirectional-link-ofertas {
+    text-decoration: underline;
+    margin-bottom: -1.2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $red_neon_color;
+}
+//--------------------------------- DELIVERY INFORMATION-----------------
+.container-envio-background-video {
+    position: relative;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .position-envios-text {
+        margin-top: 1em;
+        position: relative;
+        .first-title-about-delivery {
+            margin-top: 1em;
+            position: relative;
+            font-family: 'Rubik', sans-serif;
+            font-weight: bolder;
+            font-size: 5rem;
+            text-align: center;
+        }
+        .principal-subtitle-envios-font {
+            margin-top: 1em;
+            position: relative;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+    }
+    .video_envios-repeat {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .capa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1c1c1d;
+        opacity: 0.5;
+    }
+}
+//-------------------------------- footer------------------------------------------------
+
+.index-footer {
+    margin-top: 3em;
+    .fa-map-marker-alt,
+    .fa-phone-alt,
+    .fa-envelope,
+    .fa-map-marker-alt {
+        color: $principal_color;
+        font-size: 32px;
+        padding: 0;
+        position: absolute;
+        margin-left: 3px;
+    }
+    .index-footer-text {
+        margin-left: 2em;
+        margin-top: -0.8em;
+    }
+    .index-footer-text-opacity {
+        margin-left: 2em;
+        margin-top: -1.6em;
+        opacity: 0.5;
+    }
+    .index-icons-footer-list-style{
+        list-style: none;
+        margin-left: 0.2em;
+    }
+    .fa-facebook,
+    .fa-instagram,
+    .fa-tiktok,
+    .fa-whatsapp {
+        color: $principal_color;
+        font-size: 32px;
+        padding: 0;
+    }
+    .index-footer-subtitle-link{
+        font-family: $subtitle_font;
+        font-weight: bolder;
+    }
+    .index-footer-links{
+        margin-top: 1.7em;
+        ul {
+            list-style: none;
+            
+            a {
+                text-decoration: underline;
+                color:white;
+            }
+        }
+    }
+    .proud-colombia{
+        margin-top: 1em;
+        .fa-heart {
+            color: $principal_color;
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+}
+
+//-------------------------- Sobre Nosotros section --------------
+.introduction-section-sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./imagenes/media/imagen_principal_sobre_nostros.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin-top: 3em;
+    .introduction--text-style-sobre-nosotros{
+        position: relative;
+        color: white;
+        font-family: $title_font;
+        font-weight: bolder;
+        font-size: 3.8rem;
+        text-align: center;
+        letter-spacing: 1;
+    }
+    .capa-sobre-nosotros {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 108%;
+        background-color: #1c1c1d;
+        opacity: 0.4;
+    }
+}
+.subtitle-sobre-nosotros-description {
+    margin-top: 2em;
+    // position: relative;
+    font-family: $subtitle_font;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.sobre-nosotros-grid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: $title_font;
+}
+.icono1-años-sobre-nosotros,
+.icono2-envios-sobre-nosotros,
+.icono2-presencia-sm-sobre-nosotros {
+    margin-top: 1em;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.container-años-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.container-icono1,
+.container-icono2,
+.container-icono3,
+.container-icono4,
+.container-icono5,
+.container-icono6 {
+    display: flex;
+    justify-content: center;
+}
+.icono1,
+.icono2,
+.icono3,
+.icono4,
+.icono5,
+.icono6 {
+    color: $principal_color;
+    font-size: 9rem;
+    margin-top: 0.3em;
+}
+.sobre-nosotros-grid-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: $title_font;
+    margin-top: 2em;
+}
+
+// -----------------------formulario de contacto sobre nosotros----------------------------------------------
+.data-sobre-nosotros-container {
+    border: 2px double $principal_color;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    box-shadow: 0 0px 40px 5px $principal_color;
+    .contactanos-sobre-nosotros-title {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        font-family: $title_font;
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+    .form-button-sobre-nosotros {
+        background-color: $principal_color;
+        margin-left: 0.5em;
+    }
+    .form-control{
+        border-color: $principal_color;
+    }
+    .valid-feedback {
+        border-color: $principal_color;
+    }
+}
+//----------------------------------------------------- cupones --------------------------------------------------------
+
+.first-title-about-cupones {
+    margin-top: 1em;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.btn-cupones-buscar {
+    background-color: $principal_color;
+    color: white;
+    font-family: $subtitle_font;
+}
+.btn-cupones-buscar:hover {
+    background-color: $principal_color;
+    color: white;
+    font-weight: bolder;
+}
+.cupon-flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button-flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+//------------------------------------------ ofertas -------------------------------------
+.introduction-section-ofertas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./imagenes/media/cupones_foto_principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin-top: 3em;
+    .introduction--text-style-ofertas{
+        position: relative;
+        color: white;
+        font-family: $title_font;
+        font-weight: bolder;
+        font-size: 3.8rem;
+        text-align: center;
+        letter-spacing: 1;
+    }
+    .capa-ofertas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 108%;
+        background-color: #1c1c1d;
+        opacity: 0.6;
+    }
+}

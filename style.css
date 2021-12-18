@@ -1,0 +1,610 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Nunito", sans-serif;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+hr {
+  display: block;
+  width: 90vw;
+  border: 0;
+  border-top: 1px double #01c4e7;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.navbar {
+  font-family: "Rubik", sans-serif;
+  border-bottom: 2px double #01c4e7;
+  box-shadow: 0 0px 30px 2px #01c4e7;
+}
+.navbar .color-nav {
+  background-color: black;
+}
+.navbar img {
+  width: 7em;
+  height: 4em;
+}
+.navbar .navbar-nav .dropdown-menu {
+  border: 2px double #01c4e7;
+}
+.navbar .dropdown-divider {
+  border: 0.5px solid black;
+}
+.navbar .navbar-toggler {
+  border-color: #01c4e7;
+}
+.navbar .btn-outline {
+  margin-top: 2em;
+  border-color: #01c4e7;
+  color: #01c4e7;
+}
+.navbar .btn-outline:hover {
+  background-color: #01c4e7;
+  color: white;
+  font-weight: bolder;
+}
+.navbar .form-control {
+  border-radius: 0.8rem;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.top-nav-collapse {
+  background-color: #01c4e7;
+}
+
+.carousel {
+  margin-top: 3em;
+}
+.carousel .carousel-caption {
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+}
+.carousel .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.fa-angle-double-left, .fa-angle-double-right {
+  color: white;
+  font-size: 2em;
+}
+
+.title--box {
+  display: flex;
+  justify-content: center;
+}
+.title--box .text-align-center {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.product-item {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+
+.product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  margin-top: 1.5em;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.text-color-white {
+  color: white;
+}
+
+.btns {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  font-size: 15px;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+  border: none;
+  background-color: #272727;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+  color: #01c4e7;
+}
+
+.product-img:hover .btns {
+  bottom: 0;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  font-size: 18px;
+}
+
+.product-type {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.product-name {
+  transition: all 0.3s ease-in-out;
+}
+
+.product-name:hover {
+  color: #01c4e7;
+}
+
+.product-price {
+  color: #01c4e7;
+}
+
+.rating {
+  font-size: 13px;
+}
+
+.product-item {
+  width: 600px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: white;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #01c4e7;
+}
+
+.redirectional-link-flex {
+  display: flex;
+  justify-content: center;
+}
+.redirectional-link-flex .redirectional-link {
+  text-decoration: underline;
+  margin-bottom: -1.2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.redirectional-link-flex .redirectional-link:hover {
+  color: #01c4e7;
+}
+
+.introduction-section-chaquetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./imagenes/media/index_seccion_chaquetas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.introduction-section-chaquetas .introduction--text-style {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 3.1rem;
+  text-align: center;
+  letter-spacing: 1;
+}
+
+.chaquetas-image-responsive {
+  margin-top: 1.5em;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+
+.testimonials-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-width: 100vw;
+  color: white;
+}
+
+.card-body {
+  background-color: black;
+  border-radius: 15px;
+}
+
+.testimonials .card {
+  background: rgba(1, 196, 231, 0.6);
+  box-shadow: 0 8px 11px 1px white;
+  margin: 0 20px;
+  padding: 0 10;
+  border-radius: 15px;
+  border: 0;
+}
+
+.testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 8px;
+  box-shadow: 0 0px 10px 1px white;
+  width: 100px;
+  height: 100px;
+}
+
+.testimonials .card h5 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.testimonials .card h5 span {
+  color: #555;
+  font-size: 1rem;
+}
+
+.testimonials .card p {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.owl-item > div {
+  cursor: pointer;
+  margin: 10% 0%;
+  transition: margin 1s ease;
+}
+
+.testimonials .owl-dots {
+  text-align: center;
+}
+
+.testimonials .owl-dot span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  display: block;
+  background-color: white;
+  transition: all 0.25s ease;
+  margin: 5px 7px;
+}
+
+.testimonials .owl-dot.active span {
+  background-color: #01c4e7;
+}
+
+.ofertas-text-color {
+  color: #f80000;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.product-price-ofertas {
+  color: #f80000;
+  font-weight: bolder;
+}
+
+.redirectional-link-ofertas {
+  text-decoration: underline;
+  margin-bottom: -1.2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f80000;
+}
+
+.container-envio-background-video {
+  position: relative;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.container-envio-background-video .position-envios-text {
+  margin-top: 1em;
+  position: relative;
+}
+.container-envio-background-video .position-envios-text .first-title-about-delivery {
+  margin-top: 1em;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  text-align: center;
+}
+.container-envio-background-video .position-envios-text .principal-subtitle-envios-font {
+  margin-top: 1em;
+  position: relative;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.container-envio-background-video .video_envios-repeat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.container-envio-background-video .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1d;
+  opacity: 0.5;
+}
+
+.index-footer {
+  margin-top: 3em;
+}
+.index-footer .fa-map-marker-alt,
+.index-footer .fa-phone-alt,
+.index-footer .fa-envelope,
+.index-footer .fa-map-marker-alt {
+  color: #01c4e7;
+  font-size: 32px;
+  padding: 0;
+  position: absolute;
+  margin-left: 3px;
+}
+.index-footer .index-footer-text {
+  margin-left: 2em;
+  margin-top: -0.8em;
+}
+.index-footer .index-footer-text-opacity {
+  margin-left: 2em;
+  margin-top: -1.6em;
+  opacity: 0.5;
+}
+.index-footer .index-icons-footer-list-style {
+  list-style: none;
+  margin-left: 0.2em;
+}
+.index-footer .fa-facebook,
+.index-footer .fa-instagram,
+.index-footer .fa-tiktok,
+.index-footer .fa-whatsapp {
+  color: #01c4e7;
+  font-size: 32px;
+  padding: 0;
+}
+.index-footer .index-footer-subtitle-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+}
+.index-footer .index-footer-links {
+  margin-top: 1.7em;
+}
+.index-footer .index-footer-links ul {
+  list-style: none;
+}
+.index-footer .index-footer-links ul a {
+  text-decoration: underline;
+  color: white;
+}
+.index-footer .proud-colombia {
+  margin-top: 1em;
+}
+.index-footer .proud-colombia .fa-heart {
+  color: #01c4e7;
+  font-size: 12px;
+  padding: 0;
+}
+
+.introduction-section-sobre-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./imagenes/media/imagen_principal_sobre_nostros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  margin-top: 3em;
+}
+.introduction-section-sobre-nosotros .introduction--text-style-sobre-nosotros {
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 3.8rem;
+  text-align: center;
+  letter-spacing: 1;
+}
+.introduction-section-sobre-nosotros .capa-sobre-nosotros {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 108%;
+  background-color: #1c1c1d;
+  opacity: 0.4;
+}
+
+.subtitle-sobre-nosotros-description {
+  margin-top: 2em;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.icono1-años-sobre-nosotros,
+.icono2-envios-sobre-nosotros,
+.icono2-presencia-sm-sobre-nosotros {
+  margin-top: 1em;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container-años-sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-icono1,
+.container-icono2,
+.container-icono3,
+.container-icono4,
+.container-icono5,
+.container-icono6 {
+  display: flex;
+  justify-content: center;
+}
+
+.icono1,
+.icono2,
+.icono3,
+.icono4,
+.icono5,
+.icono6 {
+  color: #01c4e7;
+  font-size: 9rem;
+  margin-top: 0.3em;
+}
+
+.sobre-nosotros-grid-2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2em;
+}
+
+.data-sobre-nosotros-container {
+  border: 2px double #01c4e7;
+  padding-bottom: 3em;
+  padding-top: 2em;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  box-shadow: 0 0px 40px 5px #01c4e7;
+}
+.data-sobre-nosotros-container .contactanos-sobre-nosotros-title {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.data-sobre-nosotros-container .form-button-sobre-nosotros {
+  background-color: #01c4e7;
+  margin-left: 0.5em;
+}
+.data-sobre-nosotros-container .form-control {
+  border-color: #01c4e7;
+}
+.data-sobre-nosotros-container .valid-feedback {
+  border-color: #01c4e7;
+}
+
+.first-title-about-cupones {
+  margin-top: 1em;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.btn-cupones-buscar {
+  background-color: #01c4e7;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn-cupones-buscar:hover {
+  background-color: #01c4e7;
+  color: white;
+  font-weight: bolder;
+}
+
+.cupon-flex {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-flex {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.introduction-section-ofertas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./imagenes/media/cupones_foto_principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  margin-top: 3em;
+}
+.introduction-section-ofertas .introduction--text-style-ofertas {
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 3.8rem;
+  text-align: center;
+  letter-spacing: 1;
+}
+.introduction-section-ofertas .capa-ofertas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 108%;
+  background-color: #1c1c1d;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
